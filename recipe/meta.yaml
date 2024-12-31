@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - pandas >=2.2,<2.3
     - pyarrow >=15
@@ -36,6 +36,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests
 
