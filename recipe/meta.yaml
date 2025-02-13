@@ -36,6 +36,7 @@ test:
   requires:
     - pip
     - pytest
+    - jinja2
     - python {{ python_min }}
   source_files:
     - tests
