@@ -1,5 +1,5 @@
 {% set name = "nested-pandas" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nested_pandas-{{ version }}.tar.gz
-  sha256: 861cdc0c821991866004182735831188b5a70f9614a9c7d05bf7e24f1e6dcb50
+  sha256: a307a5e0a28d8ba37589856a6ecbeaa9b75f6dc91f36c545ba50047e669a2f3b
 
 build:
   noarch: python
