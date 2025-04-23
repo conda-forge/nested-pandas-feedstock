@@ -24,7 +24,8 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - pandas >=2.2,<2.3
-    - pyarrow >=15
+    - pyarrow >=18
+    - universal_pathlib
 
 test:
   imports:
