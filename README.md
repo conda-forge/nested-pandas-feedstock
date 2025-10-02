@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@dougbrn](https://github.com/dougbrn/)
 * [@hombit](https://github.com/hombit/)
 
-
-<!-- dummy commit to enable rerendering -->
-
