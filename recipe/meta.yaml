@@ -42,6 +42,7 @@ test:
     - pytest
     - jinja2
     - python {{ python_min }}
+    - numba
   source_files:
     - tests
 
