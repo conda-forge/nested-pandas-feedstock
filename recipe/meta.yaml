@@ -1,5 +1,5 @@
 {% set name = "nested-pandas" %}
-{% set version = "0.6.10" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nested_pandas-{{ version }}.tar.gz
-  sha256: f8eb60372ba8953168147bec25b820a8813d17e0fe58de1b3dbd3cd0746ba0b2
+  sha256: 4383441bc757bf53b6db6d7d576e3494565ccada6493b6bee6b237ded9ccb770
 
 build:
   noarch: python
@@ -23,10 +23,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=2
-    - pandas >=2.2.3,<2.4
+    - pandas >=3,<4
     - pyarrow >=16
     - Deprecated >=1.2.0
-    - wrapt >=1.12.1
+    - wrapt >=1.14.0
     - fsspec >=2025.7.0,!=2025.12,!=2026.1
     - universal_pathlib >=0.3.1
 
