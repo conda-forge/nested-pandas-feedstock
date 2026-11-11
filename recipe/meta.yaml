@@ -24,10 +24,10 @@ requirements:
     - python >={{ python_min }}
     - numpy >=2
     - pandas >=3,<4
-    - pyarrow >=16
-    - Deprecated >=1.2.0
+    - pyarrow >=26
+    - deprecated >=1.2.0
     - wrapt >=1.14.0
-    - fsspec >=2025.7.0,!=2025.12,!=2026.1
+    - fsspec >=2026.2.0
     - universal_pathlib >=0.3.1
 
 test:
